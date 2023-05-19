@@ -330,7 +330,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -346,6 +348,14 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#build-from-the-source-code">Build from the source code</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -357,12 +367,16 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="installation">
 <h1>Installation<a class="headerlink" href="#installation" title="Permalink to this heading">#</a></h1>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>package_URL
-<span class="nb">cd</span><span class="w"> </span>pacakge
+<section id="build-from-the-source-code">
+<h2>Build from the source code<a class="headerlink" href="#build-from-the-source-code" title="Permalink to this heading">#</a></h2>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>git@github.com:sanghyukmoon/grid_dendro.git
+<span class="nb">cd</span><span class="w"> </span>grid_dendro
 conda<span class="w"> </span>env<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>env.yml
-conda<span class="w"> </span>activate<span class="w"> </span>env_name
+conda<span class="w"> </span>activate<span class="w"> </span>grid_dendro
 </pre></div>
 </div>
+<p>(TODO) add <code class="docutils literal notranslate"><span class="pre">env.yml</span></code></p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -423,6 +437,20 @@ conda<span class="w"> </span>activate<span class="w"> </span>env_name
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#build-from-the-source-code">Build from the source code</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
